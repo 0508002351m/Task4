@@ -22,19 +22,21 @@
             </tr>
         </thead>
         <tbody>
+            {{#each cust.operations}}
             <tr>
                
            <td>
-               {{cust.operations.value}}
+               {{this.value}}
                 </td>
                   <td>
-                      {{cust.operations.type}}
+                      {{this.type}}
                 </td>
                   <td>
-                   {{cust.operations.at}}
+                   {{this.at}}
                 </td>
                 
             </tr>
+            {{/each}}
         </tbody>
     </table>
 </section>
